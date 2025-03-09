@@ -1,0 +1,24 @@
+/*
+Using For loops for cubes of numbers
+Author: Ann Mwende David
+Reg No:D33-0234-2022
+Date: 9th March 2025
+*/
+
+#include <stdio.h>
+
+int main() {
+    int start, stop, i;
+
+    printf("Enter a starting value: \n");
+    scanf("%d", &start);
+
+    printf("Enter a stopping value:\n");
+    scanf("%d", &stop);
+
+        for (i = start; i <= stop; i++) {
+            printf("Number: %d, Cube: %d\n", i, i * i * i);
+        }
+    
+    return 0; // Successful execution
+}
