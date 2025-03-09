@@ -1,0 +1,18 @@
+/*
+While loops cubes of numbers
+Author: Ann Mwende David
+Reg No:D33-0234-2022
+Date: 9th March 2025
+*/
+
+#include <stdio.h>
+
+int main() {
+    int i = 1; // start
+    while (i <= 100) { // stop 
+        printf("Number: %d, Cube: %d\n", i, i * i * i);
+        i++; // step
+    }
+
+    return 0; // successful execution
+}
