@@ -1,0 +1,43 @@
+/*
+Functions with double task
+Author:Ann David Mwende 
+Reg no:D33-0234-2023
+Date:26th March 2025
+*/
+
+#include <stdio.h> // printf(), scanf()
+
+// Function definition
+int multiplication(int x, int y) {
+    return x * y;
+}
+
+double multiplication_double(double a, double b) {
+    return a * b;
+}
+
+int main() {
+    // Variable declaration
+    int result, result_1, a, b;
+    double mult, num1, num2;
+
+    // User input for integer multiplication
+    printf("Enter two integers: ");
+    scanf("%d%d", &a, &b);
+
+    // Function calling for integer multiplication
+    result = multiplication(a, b);
+    result_1 = multiplication(200, 530);
+
+    // User input for floating-point multiplication
+    printf("Enter two decimal numbers: ");
+    scanf("%lf %lf", &num1, &num2);
+    mult = multiplication_double(num1, num2);
+
+    // Output results
+    printf("The product of integers is %d \n", result);
+    printf("Predefined integer multiplication result is %d \n", result_1);
+    printf("Multiplication of floating-point numbers is %.2lf \n", mult);
+
+    return 0;
+}
